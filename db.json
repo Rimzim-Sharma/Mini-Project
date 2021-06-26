@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "id": 2,
+      "first_name": "Try1",
+      "last_name": "Try1",
+      "item_purchased": 10,
+      "amount": 100000
+    },
+    {
+      "id": 4,
+      "first_name": "Try3",
+      "last_name": "Try3",
+      "item_purchased": 6,
+      "amount": 12000
+    },
+    {
+      "id": 5,
+      "first_name": "Try4",
+      "last_name": "Try4",
+      "item_purchased": 12,
+      "amount": 120000
+    },
+    {
+      "id": 7,
+      "first_name": "Rimzim",
+      "last_name": "sharma",
+      "item_purchased": 12,
+      "amount": 12000
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src=".\script\script.js"></script>
+    <link rel="stylesheet" href=".\css\style.css">
+
+    <title>Dapplocker</title>
+</head>
+<body class="bg-dark text-white">
+    <div class="jumbotron bg-darkk text-center">
+        <h1>Today's Purchase</h1>
+        <hr class="conhr"><br>
+    </div>
+        <div class="container main">
+            <br>
+            <div class="row">
+            <div class="col-md-8">
+                <h4>Customer's List</h4>
+                <Br>
+                <table class="table table-light table-striped">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="CustList">
+                   
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <form>
+                    <h4>Edit Customer</h4>
+                    <div class="form-group">
+                      <label for="fname">First Name:</label>
+                      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" disabled>
+                    </div>
+                    <div class="form-group">
+                      <label for="lname">Last Name:</label>
+                      <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="items">Items Purchased:</label>
+                        <input type="text" class="form-control" id="items" placeholder="Number of Items" name="items" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="text" class="form-control" id="amount" placeholder="Amount" name="amount" disabled>
+                    </div>
+                    <input type="hidden" id="hid" />      
+                    <button type="submit" class="btn btn-primary" id="show_btn" disabled onclick="UpdateCust() ">Update</button>
+                  </form>
+            </div>
+        </div>
+       
+            <div class="container">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="hello2">
+                Add Customer
+                </button> <br>
+               
+            
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content bg-dark">
+                    
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add a Customer</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="fname">First Name:</label>
+                              <input type="text" class="form-control" id="FirstName" placeholder="Enter First Name" name="fname">
+                            </div>
+                            <div class="form-group">
+                              <label for="lname">Last Name</label>
+                              <input type="text" class="form-control" id="LastName" placeholder="Enter Last Name" name="lname">
+                            </div>
+                            <div class="form-group">
+                                <label for="items">Items Purchased</label>
+                                <input type="text" class="form-control" id="CustItems" placeholder="Enter Number of Items" name="items">
+                            </div>
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input type="text" class="form-control" id="CustAmount" placeholder="Enter Amount" name="amount">
+                            </div>
+                                  
+                            <button type="submit" class="btn btn-primary" id="AddCustBtn" onclick="AddCust()">Submit</button>
+                          </form>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light text-dar" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                    </div>
+                </div>
+                </div>
+                <br>
+            </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
